@@ -1,284 +1,33 @@
 import React from "react";
-import logo from "./logo.svg";
-import useStyles from "./style/style";
 
-import { Button, Box, Grid } from "@material-ui/core";
-import MenuIcon from "@material-ui/icons/Menu";
+import { Box } from "@material-ui/core";
+import MediaQuery from "react-responsive";
+
+//my
+import { PcHeader, MobileHeader, MenuButton } from "./components/header/index";
+import { Pengin } from "./components/main/index";
+import { Service } from "./components/main/service";
+import { Work } from "./components/main/work";
+import { About } from "./components/main/about";
+import { Technology } from "./components/main/technology";
 
 function App() {
-  const classes = useStyles();
   return (
     <>
-      <Box mx={5} className={classes.hb}>
-        <Grid container direction="row" alignItems="center" justify="space-between">
-          <Grid item>
-            <Box className={classes.ht} fontSize="h4.fontSize">
-              シミズのポートフォリオ
-            </Box>
-          </Grid>
-          <Grid item>
-            <Box mr={2} mt={2}>
-
-            <MenuIcon className={classes.hm} fontSize="large" />
-            </Box>
-          </Grid>
-        </Grid>
-      </Box>
-      <Box mt={3}>hello</Box>
-      <Box mt={3}>hello</Box>
-      <Box mt={3}>hello</Box>
-      <Box mt={3}>hello</Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
-      </Box>
-      <Box
-        textAlign="center"
-        style={{ fontFamily: "komadori-mini" }}
-        component="h1"
-      >
-        シミズ リョウタ
+      <MediaQuery query="(max-width: 767px)">
+        <MobileHeader />
+        <MenuButton />
+      </MediaQuery>
+      <MediaQuery query="(min-width: 767px)">
+        <PcHeader />
+        <MenuButton />
+      </MediaQuery>
+      <Box component="main">
+        <Pengin />
+        <Service />
+        <Work />
+        <About />
+        <Technology />
       </Box>
     </>
   );

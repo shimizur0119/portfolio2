@@ -1,13 +1,50 @@
 @font-face {
-  font-family: "komadori-mini";
-  src: url("./style/komadori-mini.otf") format("opentype");
+  font-family: "komadori";
+  src: url("./style/font/komadori-mini.otf") format("opentype");
+}
+@font-face {
+  font-family: "bananaslip";
+  src: url("./style/font/bananaslip.otf") format("opentype");
+}
+@font-face {
+  font-family: "BANBAN";
+  src: url("./style/font/BANBAN-FREE.otf") format("opentype");
+}
+@font-face {
+  font-family: "canary";
+  src: url("./style/font/canarymini.otf") format("opentype");
+}
+@font-face {
+  font-family: "GAGAGAGA";
+  src: url("./style/font/GAGAGAGA-FREE.otf") format("opentype");
+}
+@font-face {
+  font-family: "kinari-gothic";
+  src: url("./style/font/kinari-gothic-mini.otf") format("opentype");
+}
+@font-face {
+  font-family: "MISHIMISHI-BLOCK";
+  src: url("./style/font/MISHIMISHI-BLOCK.otf") format("opentype");
+}
+@font-face {
+  font-family: "pugnomincho";
+  src: url("./style/font/pugnomincho-mini.otf") format("opentype");
+}
+@font-face {
+  font-family: "pupupu";
+  src: url("./style/font/pupupu-free.otf") format("opentype");
+}
+@font-face {
+  font-family: "M PLUS 1p";
+  src: url("./style/font/M_PLUS_1p/MPLUS1p-Medium.ttf") format("truetype");
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-    "Helvetica Neue", "komadori-mini", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif, "komadori", "bananaslip", "BANBAN", "canary", "GAGAGAGA",
+    "kinari-gothic", "MISHIMISHI-BLOCK", "pugnomincho", "pupupu", "M PLUS 1p";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
