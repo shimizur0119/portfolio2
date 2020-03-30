@@ -76,36 +76,52 @@ export const MenuButton = () => {
             <span className={classes.f_2}>以下、ページ内リンクです。</span>
           </ListItem>
           <ListItem>
-            <Button className={classes.f_2}>
-              <AnchorLink href="#top" style={linkStyle}>
+            <Button>
+              <AnchorLink className={classes.f_2} href="#top" style={linkStyle}>
                 top
               </AnchorLink>
             </Button>
           </ListItem>
           <ListItem>
-            <Button className={classes.f_2}>
-              <AnchorLink href="#service" style={linkStyle}>
+            <Button>
+              <AnchorLink
+                className={classes.f_2}
+                href="#service"
+                style={linkStyle}
+              >
                 できること
               </AnchorLink>
             </Button>
           </ListItem>
           <ListItem>
-            <Button className={classes.f_2}>
-              <AnchorLink href="#work" style={linkStyle}>
+            <Button>
+              <AnchorLink
+                className={classes.f_2}
+                href="#work"
+                style={linkStyle}
+              >
                 やってきたこと
               </AnchorLink>
             </Button>
           </ListItem>
           <ListItem>
-            <Button className={classes.f_2}>
-              <AnchorLink href="#about" style={linkStyle}>
+            <Button>
+              <AnchorLink
+                className={classes.f_2}
+                href="#about"
+                style={linkStyle}
+              >
                 about me
               </AnchorLink>
             </Button>
           </ListItem>
           <ListItem>
-            <Button className={classes.f_2}>
-              <AnchorLink href="#technology" style={linkStyle}>
+            <Button>
+              <AnchorLink
+                className={classes.f_2}
+                href="#technology"
+                style={linkStyle}
+              >
                 テクノロジー
               </AnchorLink>
             </Button>
