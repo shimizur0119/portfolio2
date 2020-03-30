@@ -56,7 +56,45 @@ const logos = [
   logo_22
 ];
 
-export const TechItem = props => {
+export const PcTechItem = props => {
+  const classes = useStyles();
+  return (
+    <Box mb={2} data-aos="zoom-in">
+      <Grid
+        container
+        direction="column"
+        justify="center"
+        alignItems="center"
+        spacing={5}
+      >
+        <Grid item>
+          <Box
+            fontSize="h5.fontSize"
+            className={classes.f_2}
+            children={props.title}
+            display="flex"
+            justifyContent="center"
+          />
+        </Grid>
+        <Grid item>
+          <Box px={1}>
+            <Grid container direction="row" spacing={1}>
+              {props.logos.map((e, i) => (
+                <Grid item xs={2} key={i}>
+                  <Box display="flex" justifyContent="center">
+                    <img src={e} className={classes.logo} alt={`logo_${i}`} />
+                  </Box>
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
+        </Grid>
+      </Grid>
+    </Box>
+  );
+};
+
+export const MoTechItem = props => {
   const classes = useStyles();
   return (
     <Box mb={2} data-aos="zoom-in">
@@ -94,10 +132,32 @@ export const TechItem = props => {
   );
 };
 
-export const Technology = () => {
+export const PcTechnology = () => {
   const classes = useStyles();
   return (
-    <Box pb={10}>
+    <Box pb={10} id="technology">
+      <Box
+        pb={5}
+        fontSize="h1.fontSize"
+        className={classes.f_2}
+        display="flex"
+        justifyContent="center"
+      >
+        テクノロジー
+      </Box>
+      <PcTechItem
+        pic={PenginIcon}
+        title="とりあえずロゴを並べてみました。。。"
+        logos={logos}
+      />
+    </Box>
+  );
+};
+
+export const MoTechnology = () => {
+  const classes = useStyles();
+  return (
+    <Box pb={10} id="technology">
       <Box
         pb={2}
         fontSize="h3.fontSize"
@@ -107,7 +167,7 @@ export const Technology = () => {
       >
         テクノロジー
       </Box>
-      <TechItem
+      <MoTechItem
         pic={PenginIcon}
         title="とりあえずロゴを並べてみました。。。"
         logos={logos}

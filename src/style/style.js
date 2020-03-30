@@ -53,17 +53,33 @@ const useStyles = makeStyles(() => ({
     height: 100,
     display: "block"
   },
+  pcpi: {
+    width: 200,
+    height: "auto",
+    display: "block"
+  },
   picbox: {
     position: "relative"
   },
   hukidashi1: {
-    fontFamily: "komadori",
+    fontFamily: "bananaslip",
     width: 100,
     height: 100,
     backgroundSize: "contain",
     backgroundRepeat: "no-repeat",
     position: "absolute",
     top: "-50%",
+    right: "100%",
+    backgroundImage: `url(${Pic1Icon})`
+  },
+  pchukidashi1: {
+    fontFamily: "bananaslip",
+    width: 200,
+    height: 200,
+    backgroundSize: "contain",
+    backgroundRepeat: "no-repeat",
+    position: "absolute",
+    top: "-20%",
     right: "100%",
     backgroundImage: `url(${Pic1Icon})`
   },
@@ -79,9 +95,17 @@ const useStyles = makeStyles(() => ({
     height: "auto",
     width: 100
   },
+  pcsi: {
+    height: "auto",
+    width: 300
+  },
   sb: {
     width: 100,
     height: 100
+  },
+  pcsb: {
+    width: 300,
+    height: 300
   },
   td: {
     padding: 10

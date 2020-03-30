@@ -5,30 +5,39 @@ import MediaQuery from "react-responsive";
 
 //my
 import { PcHeader, MobileHeader, MenuButton } from "./components/header/index";
-import { Pengin } from "./components/main/index";
-import { Service } from "./components/main/service";
-import { Work } from "./components/main/work";
-import { About } from "./components/main/about";
-import { Technology } from "./components/main/technology";
+import { PcPengin, MoPengin } from "./components/main/index";
+import { PcService, MoService } from "./components/main/service";
+import { PcWork, MoWork } from "./components/main/work";
+import { PcAbout, MoAbout } from "./components/main/about";
+import { PcTechnology, MoTechnology } from "./components/main/technology";
 
 function App() {
   return (
     <>
+      {/* mobile用 */}
       <MediaQuery query="(max-width: 767px)">
         <MobileHeader />
         <MenuButton />
+        <Box component="main">
+          <MoPengin />
+          <MoService />
+          <MoWork />
+          <MoAbout />
+          <MoTechnology />
+        </Box>
       </MediaQuery>
+      {/* PC用 */}
       <MediaQuery query="(min-width: 767px)">
         <PcHeader />
         <MenuButton />
+        <Box component="main">
+          <PcPengin />
+          <PcService />
+          <PcWork />
+          <PcAbout />
+          <PcTechnology />
+        </Box>
       </MediaQuery>
-      <Box component="main">
-        <Pengin />
-        <Service />
-        <Work />
-        <About />
-        <Technology />
-      </Box>
     </>
   );
 }
