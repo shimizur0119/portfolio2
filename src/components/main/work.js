@@ -6,7 +6,7 @@ import TalkIcon from "../../pic/talk.svg";
 import WebappIcon from "../../pic/webapp.svg";
 
 //my
-import { ServiceItem, PcServiceItem, MoServiceItem } from "./service";
+import { PcServiceItem, MoServiceItem } from "./service";
 
 import AOS from "aos";
 import "aos/dist/aos.css";

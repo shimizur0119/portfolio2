@@ -1,24 +1,11 @@
 import React, { useState } from "react";
 import useStyles from "../../style/style";
-import {
-  Button,
-  Box,
-  Dialog,
-  DialogContent,
-  DialogTitle,
-  DialogContentText,
-  DialogActions
-} from "@material-ui/core";
+import { Button, Box } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 
 import Drawer from "@material-ui/core/Drawer";
 import List from "@material-ui/core/List";
-import Divider from "@material-ui/core/Divider";
 import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
-import MailIcon from "@material-ui/icons/Mail";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export const PcHeader = () => {
@@ -57,11 +44,9 @@ export const MenuButton = () => {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
   const clickFunc = () => {
-    console.log("hello!!!");
     setOpen(true);
   };
   const closeFunc = () => {
-    console.log("close!!!");
     setOpen(false);
   };
   const linkStyle = { textDecoration: "none", color: "initial" };

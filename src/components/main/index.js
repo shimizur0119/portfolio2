@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import useStyles from "../../style/style";
-import { Box } from "@material-ui/core";
+import { Box, Grow } from "@material-ui/core";
 import PenginIcon from "../../pic/pengin.png";
 
 import AOS from "aos";
@@ -9,30 +9,67 @@ AOS.init();
 
 export const PcPengin = () => {
   const classes = useStyles();
+  const [open, setOpen] = useState(false);
+  const [count, setCount] = useState(0);
+  const hoverFunc = () => {
+    setOpen(!open);
+    setCount(count + 1);
+  };
   return (
     <Box pt={20} pb={10} id="top">
       <Box display="flex" justifyContent="center">
-        <Box className={classes.picbox}>
+        <Box className={classes.picbox} onMouseOver={hoverFunc} id="hover">
           <img src={PenginIcon} className={classes.pcpi} alt="popup" />
-          <Box
-            p={2}
-            className={classes.pchukidashi1}
-            whiteSpace="nowrap"
-            data-aos="zoom-in"
-            fontSize="h5.fontSize"
-          >
-            <Box pt={3}>
-              <Box display="flex" justifyContent="center">
-                おつかれ様です。
-              </Box>
-              <Box display="flex" justifyContent="center">
-                ※PC版ページ
+          <Grow in={!open}>
+            <Box
+              p={2}
+              className={classes.pchukidashi1}
+              whiteSpace="nowrap"
+              fontSize="h5.fontSize"
+            >
+              <Box pt={2}>
+                <Box display="flex" justifyContent="center">
+                  見ていただいて、ありがとうございます。
+                </Box>
+                <Box display="flex" justifyContent="center">
+                  こちらはPC版ページです。
+                </Box>
               </Box>
             </Box>
-          </Box>
+          </Grow>
+          <Grow in={open}>
+            <Box
+              p={2}
+              className={classes.pchukidashi2}
+              whiteSpace="nowrap"
+              // data-aos="zoom-in"
+              fontSize="h5.fontSize"
+            >
+              <Box pt={3}>
+                <Box display="flex" justifyContent="center">
+                  Done is better than perfect!
+                </Box>
+                <Box display="flex" justifyContent="center">
+                  完ぺきを目指すよりまず完成させろ
+                </Box>
+              </Box>
+            </Box>
+          </Grow>
+          <Grow in={count > 5}>
+            <Box
+              className={classes.pcaudience}
+              whiteSpace="nowrap"
+              fontSize="h5.fontSize"
+            ></Box>
+          </Grow>
         </Box>
       </Box>
-      <Box textAlign="center" className={classes.htt} fontSize="h2.fontSize" component="h1">
+      <Box
+        textAlign="center"
+        className={classes.htt}
+        fontSize="h2.fontSize"
+        component="h1"
+      >
         シミズ リョウタ
       </Box>
       <Box

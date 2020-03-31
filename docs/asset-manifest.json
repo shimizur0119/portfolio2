@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "./static/css/main.6b1358d8.chunk.css",
-    "main.js": "./static/js/main.f00595dd.chunk.js",
-    "main.js.map": "./static/js/main.f00595dd.chunk.js.map",
+    "main.js": "./static/js/main.b069daaa.chunk.js",
+    "main.js.map": "./static/js/main.b069daaa.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.5c6e7710.js",
     "runtime-main.js.map": "./static/js/runtime-main.5c6e7710.js.map",
     "static/css/2.4707e12a.chunk.css": "./static/css/2.4707e12a.chunk.css",
-    "static/js/2.315a06c2.chunk.js": "./static/js/2.315a06c2.chunk.js",
-    "static/js/2.315a06c2.chunk.js.map": "./static/js/2.315a06c2.chunk.js.map",
+    "static/js/2.a7180fec.chunk.js": "./static/js/2.a7180fec.chunk.js",
+    "static/js/2.a7180fec.chunk.js.map": "./static/js/2.a7180fec.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.22efba417fb70572ef43747894a8666d.js": "./precache-manifest.22efba417fb70572ef43747894a8666d.js",
+    "precache-manifest.a141349e3da6bec0bdae8e7a1dcfa62f.js": "./precache-manifest.a141349e3da6bec0bdae8e7a1dcfa62f.js",
     "service-worker.js": "./service-worker.js",
     "static/css/2.4707e12a.chunk.css.map": "./static/css/2.4707e12a.chunk.css.map",
     "static/css/main.6b1358d8.chunk.css.map": "./static/css/main.6b1358d8.chunk.css.map",
-    "static/js/2.315a06c2.chunk.js.LICENSE.txt": "./static/js/2.315a06c2.chunk.js.LICENSE.txt",
+    "static/js/2.a7180fec.chunk.js.LICENSE.txt": "./static/js/2.a7180fec.chunk.js.LICENSE.txt",
     "static/media/index.css": "./static/media/pupupu-free.9b2186c4.otf",
+    "static/media/audience2.svg": "./static/media/audience2.4dd39cd6.svg",
     "static/media/bootstrap-4.svg": "./static/media/bootstrap-4.ffded238.svg",
     "static/media/couchdb.svg": "./static/media/couchdb.a4bfff76.svg",
     "static/media/css-5.svg": "./static/media/css-5.6971ddc7.svg",
@@ -24,6 +25,7 @@
     "static/media/gitlab.svg": "./static/media/gitlab.523d5e81.svg",
     "static/media/html5.svg": "./static/media/html5.f0361c5e.svg",
     "static/media/hukidashi1.png": "./static/media/hukidashi1.8441fab2.png",
+    "static/media/hukidashi1r.png": "./static/media/hukidashi1r.8ae73e0f.png",
     "static/media/ibm-watson.svg": "./static/media/ibm-watson.40c5ff22.svg",
     "static/media/javascript.svg": "./static/media/javascript.61ed8b05.svg",
     "static/media/jquery-1.svg": "./static/media/jquery-1.da41a704.svg",
@@ -49,8 +51,8 @@
   "entrypoints": [
     "static/js/runtime-main.5c6e7710.js",
     "static/css/2.4707e12a.chunk.css",
-    "static/js/2.315a06c2.chunk.js",
+    "static/js/2.a7180fec.chunk.js",
     "static/css/main.6b1358d8.chunk.css",
-    "static/js/main.f00595dd.chunk.js"
+    "static/js/main.b069daaa.chunk.js"
   ]
 }

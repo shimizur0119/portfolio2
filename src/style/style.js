@@ -1,6 +1,8 @@
 import { makeStyles } from "@material-ui/styles";
 import Pic1Icon from "../pic/hukidashi1.png";
-// import Pic1Icon from "../pic/hukidashi1.svg";
+import Pic1rIcon from "../pic/hukidashi1r.png";
+// import Pic2Icon from "../pic/audience.png";
+import Pic2Icon from "../pic/audience2.svg";
 
 const useStyles = makeStyles(() => ({
   ht: {
@@ -83,6 +85,29 @@ const useStyles = makeStyles(() => ({
     right: "100%",
     backgroundImage: `url(${Pic1Icon})`
   },
+  pchukidashi2: {
+    fontFamily: "bananaslip",
+    width: 200,
+    height: 200,
+    backgroundSize: "contain",
+    backgroundRepeat: "no-repeat",
+    position: "absolute",
+    top: "-20%",
+    left: "100%",
+    backgroundImage: `url(${Pic1rIcon})`
+  },
+  pcaudience: {
+    fontFamily: "bananaslip",
+    width: 400,
+    height: 200,
+    backgroundSize: "contain",
+    backgroundRepeat: "no-repeat",
+    position: "absolute",
+    bottom: "-50%",
+    left: "-50%",
+    zIndex: -1,
+    backgroundImage: `url(${Pic2Icon})`
+  },
   pic2: {
     position: "absolute",
     top: "-50%",
@@ -110,9 +135,9 @@ const useStyles = makeStyles(() => ({
   td: {
     padding: 10
   },
-  logo:{
-    width:100,
-    height:100
+  logo: {
+    width: 100,
+    height: 100
   }
 }));
 
