@@ -27,9 +27,6 @@ import logo_20 from "../../pic/logo/postgresql.svg";
 import logo_21 from "../../pic/logo/couchdb.svg";
 import logo_22 from "../../pic/logo/ibm-watson.svg";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
-AOS.init();
 
 const logos = [
   logo_1,

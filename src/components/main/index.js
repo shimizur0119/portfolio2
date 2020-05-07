@@ -5,7 +5,7 @@ import PenginIcon from "../../pic/pengin.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-AOS.init();
+AOS.init({ once: true });
 
 export const PcPengin = () => {
   const classes = useStyles();

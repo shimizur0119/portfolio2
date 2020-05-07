@@ -10,6 +10,7 @@ import { PcService, MoService } from "./components/main/service";
 import { PcWork, MoWork } from "./components/main/work";
 import { PcAbout, MoAbout } from "./components/main/about";
 import { PcTechnology, MoTechnology } from "./components/main/technology";
+import { PcReversi, MoReversi } from "./components/main/reversi";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <MoPengin />
           <MoService />
           <MoWork />
+          <MoReversi />
           <MoAbout />
           <MoTechnology />
         </Box>
@@ -34,6 +36,7 @@ function App() {
           <PcPengin />
           <PcService />
           <PcWork />
+          <PcReversi />
           <PcAbout />
           <PcTechnology />
         </Box>

@@ -8,9 +8,6 @@ import WebappIcon from "../../pic/webapp.svg";
 //my
 import { PcServiceItem, MoServiceItem } from "./service";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
-AOS.init();
 
 const text1 =
   "お客様先の社内QA対応を行うチャットボットをLINE風のデザインで作成しました。管理画面を実装して、ログインできるアカウントを管理したり、回答データをグラフで表示したり、設定ファイルで回答内容を編集できたりする機能を実装しました。";

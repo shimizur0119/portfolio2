@@ -6,10 +6,6 @@ import WebpageIcon from "../../pic/webpage.svg";
 import ServerIcon from "../../pic/server.png";
 import SecurityIcon from "../../pic/security.png";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
-AOS.init();
-
 export const ServiceItem = props => {
   const classes = useStyles();
   return (

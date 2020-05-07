@@ -5,10 +5,6 @@ import { Box, Grid } from "@material-ui/core";
 import PenginIcon from "../../pic/pengin.svg";
 import Soccer2Icon from "../../pic/soccer2.svg";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
-AOS.init();
-
 export const PcAboutItem = props => {
   const classes = useStyles();
   return (
